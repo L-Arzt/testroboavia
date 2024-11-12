@@ -1,0 +1,23 @@
+.App {
+  display: flex;
+  height: 100vh;
+}
+
+.main-section {
+  display: flex;
+  flex-grow: 1;
+}
+
+@media (max-width: 1024px) {
+  .App {
+    flex-direction: row;
+
+  }
+  .main-section {
+    flex-direction: column;
+  }
+
+  .chat-window {
+    order: 2;
+  }
+}

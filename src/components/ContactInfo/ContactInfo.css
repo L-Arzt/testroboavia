@@ -1,0 +1,86 @@
+.contact-info {
+    display: flex;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 14px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .contact-info.visible {
+    display: block;
+  }
+  
+  .contact-photo-large {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info h2 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .contact-info p {
+    font-size: 16px;
+  }
+
+  .contact-images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+  
+  }
+  .contact-img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  /* Медиазапрос для экранов шириной 1024px и меньше */
+  @media (max-width: 1024px) {
+
+    .contact-info {
+       align-items: center;
+       justify-content: space-around;
+       gap: 30px;
+      padding: 10px;
+      width: 100%;
+      max-width: none;
+    }
+
+    .contact-text{
+        display: flex;
+        align-items: center;
+    gap: 30px;
+    }
+  
+    .contact-photo-large {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .contact-info h2 {
+      font-size: 18px;
+    }
+  
+    .contact-info p {
+      font-size: 14px;
+    }
+
+    .contact-info.visible {
+        display: flex;
+      }
+
+      .contact-img{
+        width: 30px;
+        height: 30px;
+      }
+  }
+  

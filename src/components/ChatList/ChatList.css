@@ -1,0 +1,133 @@
+/* chat-list */
+
+.chat-list {
+    width: 20%;
+    border-right: 1px solid #ccc;
+    
+  }
+
+  .chat-img-plus{
+    width: 24px; 
+    height: 24px; 
+ }
+
+.chat-item{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+    border-top: 1px solid rgb(133, 133, 133);
+}
+.chat-text{
+     width: 90%;
+    display: flex;
+    
+    flex-direction: column;
+}
+
+  .chat-list-button{
+width: 90%;
+height: 40px;
+display: flex;
+align-items: center;
+justify-content: end;
+  }
+
+  .last-message {
+    display: flex; 
+     align-items: center;
+  justify-content: space-between;
+    font-size: 0.8em;
+    color: #888;
+    padding: 2px;
+    cursor: pointer;
+    width: 90%;
+  }
+  
+  .message-date {
+    font-size: 0.7em;
+    color: #aaa;
+  }
+   .chat {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+    cursor: pointer;
+ 
+  }
+  
+  .chat-item.selected {
+    background-color: #d0f0c0;
+  }
+  
+  .chat-item:hover {
+    background-color: #f0f0f0;
+  }
+
+  .chat-photo{
+    width: 50px; 
+    height: 50px; 
+    object-fit: cover; 
+    border-radius: 50%;
+  }
+
+  /* modal */
+  .modal {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    position: fixed;
+    width: 20%;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    background: white;
+    border: 1px solid #ccc;
+    z-index: 1000;
+   
+  }
+  
+  .contact-photo {
+    width: 50px; 
+    height: 50px; 
+    object-fit: cover;
+    border-radius: 50%; 
+    padding-right: 20px;
+  }
+
+  .modalHead{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .close-modal { 
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer; }
+
+    .contact-photo { 
+    width: 50px; 
+    height: 50px; 
+    object-fit: cover; 
+    border-radius: 50%;
+ }
+
+.contact-item {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    border-top: 1px solid rgb(133, 133, 133);
+    width: 90%;
+  }
+  
+  .contact-item:hover {
+    background-color: #e0e0e0;
+  }
